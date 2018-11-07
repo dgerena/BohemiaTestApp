@@ -1,0 +1,28 @@
+<div style="text-align:center">
+  <h1>
+    Introduction to the {{ title }}!
+  </h1>
+  <button (click)="show = !show;">{{show ? 'Hide List' : 'Display List'}}</button>
+  <table class="col-xs-12 table table-striped" *ngIf="show">
+    <thead>
+      <tr>
+        <td class=" photo">Photo</td>
+        <td class=" name">Name</td>
+        <td class=" title">Title</td>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of employees">
+          <td class=" photo">
+            <img src={{data.profileImage}}>
+          </td>
+          <td class=" name">
+            {{data.name}}
+          </td>
+          <td class=" title">
+            {{data.title}}
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>

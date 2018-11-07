@@ -1,0 +1,18 @@
+/* tr , thead tr { 
+    background-color: seashell;
+    color: black;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+     background-color: gray;
+}
+*/
+img {
+    height: 8rem;
+    border: 1px solid black;
+}
+
+.title, .photo, .name {
+    margin: 2em;    
+}
